@@ -83,11 +83,11 @@ function getRandomUser() {
 
 function welcomeUser() {
     userWelcome.innerText = `Welcome Back, ${singleUser.returnUserName()} !`;
-   
+
 }
 
 function convertFriendIdToName() {
-  const friendsArray = []   
+  const friendsArray = []
         singleUser.friends.forEach(friend => {
           console.log('blahblah',users)
           const matchingIds = users.filter(user => {
@@ -99,8 +99,8 @@ function convertFriendIdToName() {
           friendsArray.push(user.name)
         })
         console.log('did it work?',friendsArray)
-        return friendsArray    
-  
+        return friendsArray
+
   }
 
 
